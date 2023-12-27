@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800');
+
+/* @font-face {
+  font-family: "Montserrat";
+  font-weight: 400;
+  src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+  unicode-range: U+0041-005A, U+0061-007A;
+}
+
+@font-face {
+  font-family: "Noto Sans KR";
+  src: url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&display=swap');
+} */
+
+body {
+  font-family: "Montserrat", "Noto Sans KR", dotum, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #C40F37;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #eee;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  height: 0.5rem;
+}
+
+.scrollbar-hide::-webkit-scrollbar-thumb {
+  background-color: #c40f37;
+  border-radius: 5rem;
+}
+
+.scrollbar-hide::-webkit-scrollbar-track {
+  background-color: rgba(173, 173, 173, 0.667);
+}
+
+.bg-linear-gradient {
+  background-color: #f1f1f1;
+  background-image: linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 44%,
+    rgba(255, 255, 255, 0.3) 45%,
+    rgba(255, 255, 255, 0.3) 55%,
+    rgba(255, 255, 255, 0) 56%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 4px 4px;
+  background-repeat: repeat;
+
+  
+}
