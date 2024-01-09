@@ -10,10 +10,8 @@ export const navMenu = [
     {
         head: '모나미 제품', to: '/search',
         lists: [
-            { list: '펜', to: "/search" },
-            { list: '마카', to: "/search" },
-            { list: '형광펜', to: "/search" },
-            { list: '미술용품', to: "/search" },
+            { list: '제품 검색', to: "/search" },
+
         ]
     },
     {
@@ -25,7 +23,6 @@ export const navMenu = [
     {
         head: '고객지원', to: '/inquity',
         lists: [
-            { list: '자주묻는질문', to: "/inquity" },
             { list: '문의하기', to: "/inquity" },
         ]
     }

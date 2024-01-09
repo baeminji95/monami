@@ -11,7 +11,7 @@ export default function CeoMessage() {
             <article className="w-[95%] m-auto md:w-[85%] max-w-[70rem] duration-500">
                 <div className="relative p-[0.3rem]">
                     <div className="bg-[#c40f39] w-[9.5rem] h-[9.5rem] absolute top-0 left-0 z-[-1]"></div>
-                    <img className="z-10" src="/img/message_ceo.jpg" alt="CEO사진" />
+                    <img className="z-10" src={process.env.PUBLIC_URL + "/images/message_ceo.jpg"} alt="CEO사진" />
 
                     <div className="w-[50%] h-[50%] max-w-[30rem] m-1 absolute right-[-0.5rem] md:right-[-2rem] top-[50%] translate-y-[-50%] bg-[#e3e3e3] bg-message_slg bg-center bg-cover flex justify-center items-center">
                         <p className="m-auto pl-5 text-[1rem]
@@ -57,7 +57,7 @@ export default function CeoMessage() {
                 </p>
                 <div className="flex items-center gap-5 absolute bottom-0 right-0 m-10">
                     <p className="text-[1rem] text-[#555]">(주)모나미 대표</p>
-                    <img src="/img/message_sign.jpg" alt="송하경대표 사인"></img>
+                    <img src= {process.env.PUBLIC_URL + "/images/message_sign.jpg"} alt="송하경대표 사인"/>
                 </div>
             </article>
         </>

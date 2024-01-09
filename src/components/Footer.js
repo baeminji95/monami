@@ -15,7 +15,7 @@ export default function Footer() {
         <footer id="footer" className="h-[100%] py-[3rem] px-3 bg-[#111]">
             {/* logo & 회사소개,정보처리 */}
             <article className="w-[95%] m-auto flex justify-between ">
-                <img src="img\foot_logo.jpg" alt="모나미 로고 흑백반전" />
+                <img src={process.env.PUBLIC_URL + "/images/foot_logo.jpg"} alt="모나미 로고 흑백반전" />
 
                 <div className="flex gap-2 items-center font-semibold text-[0.6rem] text-white/30
                 sm:text-[0.7rem]

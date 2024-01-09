@@ -7,7 +7,7 @@ export default function Main() {
     return (
         <main className="w-[100%]">
             {/* 메인이미지*/}
-            <article className="max-h-[41rem] mt-[9.85rem] bg-[url('../public/img/visual1.jpg')] bg-no-repeat bg-center
+            <article className="max-h-[41rem] mt-[9.85rem] bg-main_visual bg-no-repeat bg-center
                 md:h-[30rem]
                 lg:h-[35rem]
                 xl:h-[38rem]
@@ -48,7 +48,7 @@ export default function Main() {
 
             {/* 비디오 */}
             <video muted loop autoPlay className="w-full min-w-full">
-                <source src="video/monami_brand_web_60.mp4" type="video/mp4"/>
+                <source src={process.env.PUBLIC_URL + "/video/monami_brand_web_60.mp4"} type="video/mp4"/>
             </video>
 
             <div className="w-[100%] h-[1rem] bg-[#eee]"></div>
@@ -61,7 +61,7 @@ export default function Main() {
 
                 <article className="w-[16rem] m-auto bg-[#ddd] flex flex-col justify-center items-center p-3
                 md:m-0">
-                    <img src="img\inquiry_tit_bg.png" alt="종이와 펜 아이콘" className="pt-8" />
+                        <img src={process.env.PUBLIC_URL + "/images/inquiry_tit_bg.png"} alt="종이와 펜 아이콘" className="pt-8" />
                     <h2 className="font-semibold text-[1.25rem] tracking-wide font-[Montserrat] pt-3">INQUIRY</h2>
                     <div className="w-7 h-1 my-[0.6rem] bg-[#C40F37]"></div>
                     <p className="text-[0.85rem] text-[#6a6a6a] tracking-wide text-center">
@@ -85,22 +85,22 @@ export default function Main() {
             2xl:p-10 2xl:gap-8">
                 <Link to="#fam-logo"
                     className="border border-[#ddd] hover:border-[#C40F37] transition ease-in-out duration-[0.3s] hover:outline hover:outline-1 hover:outline-[#C40F37]">
-                    <img src="img\fam_img1.jpg" alt="모나미몰 로고" />
+                        <img src={process.env.PUBLIC_URL + "/images/fam_img1.jpg"} alt="모나미몰 로고" />
                 </Link>
 
                 <Link to="#fam-logo"
                     className="border border-[#ddd] hover:border-[#C40F37] transition ease-in-out duration-[0.3s] hover:outline hover:outline-1 hover:outline-[#C40F37]">
-                    <img src="img\fam_img6.jpg" alt="모나르떼 로고" />
+                    <img src={process.env.PUBLIC_URL + "/images/fam_img6.jpg"} alt="모나르떼 로고" />
                 </Link>
 
                 <Link to="#fam-logo"
                     className="border border-[#ddd] hover:border-[#C40F37] transition ease-in-out duration-[0.3s] hover:outline hover:outline-1 hover:outline-[#C40F37]">
-                    <img src="img\fam_img5.jpg" alt="모나미스테이션 로고" />
+                    <img src={process.env.PUBLIC_URL + "/images/fam_img5.jpg"} alt="모나미스테이션 로고" />
                 </Link>
 
                 <Link to="#fam-logo"
                     className="border border-[#ddd] hover:border-[#C40F37] transition ease-in-out duration-[0.3s] hover:outline hover:outline-1 hover:outline-[#C40F37]">
-                    <img src="img\fam_img2.jpg" alt="모나미 모나르떼 어린이 미술대회" />
+                    <img src={process.env.PUBLIC_URL + "/images/fam_img2.jpg"} alt="모나미 모나르떼 어린이 미술대회" />
                 </Link>
             </article>
         </main>

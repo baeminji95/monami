@@ -6,7 +6,7 @@ import TopButton from "./components/TopButton"
 import Search from "./components/Search"
 import Inquity from "./components/Inquity"
 import About from "./components/about/About"
-import NewsPage from "./components/NewsPage"
+import NewsPage from "./components/news/NewsPage"
 import Main from "./components/main/Main"
 import Footer from './components/Footer';
 
