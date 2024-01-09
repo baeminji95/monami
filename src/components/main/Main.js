@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import Arrivals from "./Arrivals"
+import NewArrivals from "./NewArrivals"
 import BestProduct from "./BestProduct"
 import MainNews from "./MainNews"
 
@@ -42,7 +42,7 @@ export default function Main() {
                 </div>
             </article>
 
-            <Arrivals />
+            <NewArrivals />
 
             <BestProduct />
 

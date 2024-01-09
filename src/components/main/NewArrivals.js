@@ -15,10 +15,10 @@ function PlusBtn() {
     )
 }
 
-export default function Arrivals() {
+export default function NewArrivals() {
     return (
         <>
-            {/* 얼리버드 제품 */}
+            {/* 신제품 */}
             <article id="arriveals" className="mx-auto max-w-[80rem] max-h-[56rem] my-[4rem] px-[2vw] relative">
                 {/* 타이틀 */}
                 <div className="absolute top-0 left-0 px-[2vw]">
@@ -40,7 +40,7 @@ export default function Arrivals() {
                         가장 먼저 만나는 설레는 기다림
                     </p>
                 </div>
-                {/* 얼리버드 제품 */}
+                {/* 제품 이미지 */}
                 <div className="flex gap-3 items-end 2xl:gap-6">
                     <div id="그리픽스" className="hover:cursor-pointer relative">
                         <div>

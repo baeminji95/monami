@@ -12,7 +12,7 @@ export default function Nav() {
             <nav id="nav" className="w-[100%] h-24 flex text-center justify-between fixed top-[4rem] z-10 border-b-[1px] px-7 bg-white">
                 {/* 로고 */}
                 <Link to="/" className="items-center">
-                    <img src="img\logo.jpg" alt="모나미로고" />
+                    <img src="img/logo.jpg" alt="모나미로고" />
                 </Link>
                 {/* 메뉴 */}
                 <ul className="hidden justify-between items-center gap-8
@@ -43,7 +43,7 @@ export default function Nav() {
                     {/* <!-- searchBtn --> */}
                     <div>
                         <Link to="/search">
-                            <img src="img\btn_search.gif" alt="돋보기" />
+                            <img src="img/btn_search.gif" alt="돋보기" />
                         </Link>
                     </div>
                     {/* <!-- 전체메뉴 버튼 --> */}
