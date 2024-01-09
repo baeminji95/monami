@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/MONAMI_clone/static/css/main.554d811a.css",
+    "main.js": "/MONAMI_clone/static/js/main.cd60a7cb.js",
+    "static/js/787.a5f3ec44.chunk.js": "/MONAMI_clone/static/js/787.a5f3ec44.chunk.js",
+    "static/media/visual1.jpg": "/MONAMI_clone/static/media/visual1.6addc7837c7686ca52ec.jpg",
+    "static/media/page_visual2.jpg": "/MONAMI_clone/static/media/page_visual2.6a5a0f0292ae28c9329d.jpg",
+    "static/media/page_visual1.jpg": "/MONAMI_clone/static/media/page_visual1.d18149bf63c5dee97a7e.jpg",
+    "static/media/page_visual4.jpg": "/MONAMI_clone/static/media/page_visual4.b375a09e9a70e739b69f.jpg",
+    "static/media/inquirypage_bg.jpg": "/MONAMI_clone/static/media/inquirypage_bg.a7b9193d5cd9e23af0be.jpg",
+    "static/media/company_info3_img1.jpg": "/MONAMI_clone/static/media/company_info3_img1.285eecac5390e8b8b300.jpg",
+    "static/media/page_visual5.jpg": "/MONAMI_clone/static/media/page_visual5.d6e8a605e1801cd0ffff.jpg",
+    "static/media/location_img1.jpg": "/MONAMI_clone/static/media/location_img1.49d68dbeac6d04f8e484.jpg",
+    "index.html": "/MONAMI_clone/index.html",
+    "main.554d811a.css.map": "/MONAMI_clone/static/css/main.554d811a.css.map",
+    "main.cd60a7cb.js.map": "/MONAMI_clone/static/js/main.cd60a7cb.js.map",
+    "787.a5f3ec44.chunk.js.map": "/MONAMI_clone/static/js/787.a5f3ec44.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.554d811a.css",
+    "static/js/main.cd60a7cb.js"
+  ]
+}
