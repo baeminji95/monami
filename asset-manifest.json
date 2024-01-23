@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/monami/static/css/main.75ae5361.css",
-    "main.js": "/monami/static/js/main.ba22ec9c.js",
+    "main.css": "/monami/static/css/main.219dd9ec.css",
+    "main.js": "/monami/static/js/main.afa7a761.js",
     "static/js/787.a5f3ec44.chunk.js": "/monami/static/js/787.a5f3ec44.chunk.js",
     "static/media/visual1.jpg": "/monami/static/media/visual1.6addc7837c7686ca52ec.jpg",
     "static/media/page_visual2.jpg": "/monami/static/media/page_visual2.6a5a0f0292ae28c9329d.jpg",
@@ -12,12 +12,12 @@
     "static/media/page_visual5.jpg": "/monami/static/media/page_visual5.d6e8a605e1801cd0ffff.jpg",
     "static/media/location_img1.jpg": "/monami/static/media/location_img1.49d68dbeac6d04f8e484.jpg",
     "index.html": "/monami/index.html",
-    "main.75ae5361.css.map": "/monami/static/css/main.75ae5361.css.map",
-    "main.ba22ec9c.js.map": "/monami/static/js/main.ba22ec9c.js.map",
+    "main.219dd9ec.css.map": "/monami/static/css/main.219dd9ec.css.map",
+    "main.afa7a761.js.map": "/monami/static/js/main.afa7a761.js.map",
     "787.a5f3ec44.chunk.js.map": "/monami/static/js/787.a5f3ec44.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.75ae5361.css",
-    "static/js/main.ba22ec9c.js"
+    "static/css/main.219dd9ec.css",
+    "static/js/main.afa7a761.js"
   ]
 }
