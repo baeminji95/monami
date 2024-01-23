@@ -8,11 +8,19 @@ export default function Nav() {
     function fullMenu() {
         setHandleMenu(!handleMenu)
     }
+
+    function toTop() {
+        window.scroll({
+            top: 0,
+            behavior: "smooth"
+        })
+    }
+
     return (
         <>
             <nav id="nav" className="w-[100%] h-24 flex text-center justify-between fixed top-[4rem] z-10 border-b-[1px] px-7 bg-white">
                 {/* 로고 */}
-                <Link to="/" className="items-center">
+                <Link to="/" onClick={()=>toTop} className="items-center">
                     <img src={process.env.PUBLIC_URL + '/images/logo.jpg'} alt="모나미로고" />
                 </Link>
                 {/* 메뉴 */}
@@ -27,14 +35,15 @@ export default function Nav() {
                                 {meue.head}
                             </Link>
                             {!handleMenu &&
-                                <ul
-                                    className="hidden w-[11.2rem] absolute top-[100%] left-[50%] translate-x-[-50%] z-10 group-hover:block bg-white/95 px-4">
+                                <ul 
+                                    className={`h-0 overflow-hidden w-[11.2rem] absolute top-[100%] left-[50%] translate-x-[-50%] z-10 duration-500 bg-white/95 px-4 ${meue.height}`}>
                                     {meue.lists.map(l =>
-                                        <Link to={l.to} key={l.list} className="block text-[0.88rem] text-[#6e6e6e] hover:text-[#C40F37] border-b border-[#e1e1e1] py-4">{l.list}</Link>
+                                    <li key={l.list}>
+                                        <Link to={l.to} className="block text-[0.88rem] text-[#6e6e6e] hover:text-[#C40F37] border-b border-[#e1e1e1] py-4">{l.list}</Link>
+                                    </li>
                                     )}
                                 </ul>
                             }
-
                         </li>
                     )}
                 </ul>
@@ -49,10 +58,11 @@ export default function Nav() {
                     </div>
                     {/* <!-- 전체메뉴 버튼 --> */}
                     <div className="flex flex-col hover:cursor-pointer">
-                        <div onClick={fullMenu} className="flex flex-col gap-[0.2]">
-                            <div className="menuBtnBar bg-gray-700 w-5 h-[2px] my-[3px] duration-300"></div>
-                            <div className="menuBtnBar bg-gray-700 w-5 h-[2px] my-[3px] duration-300"></div>
-                            <div className="menuBtnBar bg-gray-700 w-5 h-[2px] my-[3px] duration-300"></div>
+                        <div onClick={fullMenu} className="flex flex-col gap-[0.2]"
+                        >
+                            <div className={`menuBtnBar bg-gray-700 w-5 h-[2px] my-[3px] duration-300 ${handleMenu ? 'rotate-45 translate-y-[0.25rem]': ''}`}></div>
+                            <div className={`menuBtnBar bg-gray-700 w-5 h-[2px] my-[3px] duration-300 ${handleMenu ? 'hidden': ''}`}></div>
+                            <div className={`menuBtnBar bg-gray-700 w-5 h-[2px] my-[3px] duration-300 ${handleMenu ? 'rotate-[-45deg] translate-y-[-0.25rem]': ''}`}></div>
                         </div>
                         {/* <!-- 전체 메뉴 --> */}
                         {handleMenu &&

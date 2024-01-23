@@ -68,8 +68,7 @@ export default function Inquity() {
       <TopButton />
       <main>
         <article
-          className="h-[18rem] max-w-[100vw] mx-auto mt-[10rem] 
-                bg-visual4 bg-cover bg-no-repeat bg-center"
+          className="h-[18rem] max-w-[100vw] mx-auto mt-[10rem] bg-visual4 bg-cover bg-no-repeat bg-center"
         >
           <div className="h-[18rem] flex flex-col justify-center items-center gap-3">
             <h3 className="text-[1.8rem] font-[500] tracking-wider text-white">
@@ -112,35 +111,35 @@ export default function Inquity() {
                   >
                     {selectInquiry}
                     <span className="text-center">
-                      {isDropdwonView ? "▲" : "▼"}
+                      {isDropdwonView ? "△" : "▽"}
                     </span>
                     {isDropdwonView && (
-                      <ul className="absolute top-[90%] left-[50%] translate-x-[-50%] w-[100%] text-amber-950 bg-white border-2 rounded-md px-2 py-1 mt-1">
+                      <ul className="absolute top-[90%] left-[50%] translate-x-[-50%] w-[100%] text-[#464646] bg-white border-amber-950 border-2 rounded-md px-2 py-1 mt-[0.3rem]">
                         <li
                           onClick={select}
                           id="제품문의(대량구매 포함)"
-                          className="border-b hover:text-[#c40f39]"
+                          className="border-b hover:bg-[#c40f39] hover:text-white"
                         >
                           제품문의(대량구매 포함)
                         </li>
                         <li
                           onClick={select}
                           id="제안사항(콜라보레이션 포함)"
-                          className="border-b hover:text-[#c40f39]"
+                          className="border-b hover:bg-[#c40f39] hover:text-white"
                         >
                           제안사항(콜라보레이션 포함)
                         </li>
                         <li
                           onClick={select}
                           id="기타문의"
-                          className="border-b hover:text-[#c40f39]"
+                          className="border-b hover:bg-[#c40f39] hover:text-white"
                         >
                           기타문의
                         </li>
                         <li
                           onClick={select}
                           id="산업용 제품문의"
-                          className="hover:text-[#c40f39]"
+                          className=" hover:bg-[#c40f39] hover:text-white"
                         >
                           산업용 제품 문의
                         </li>
@@ -161,7 +160,7 @@ export default function Inquity() {
                   id="name"
                   type="text"
                   spellCheck="false"
-                  className="px-2 py-1 rounded-md mb-3 text-amber-950"
+                  className="px-2 py-1 rounded-md mb-3 text-[#464646]"
                   value={name}
                   onChange={({ target }) => setName(target.value)}
                 />
@@ -175,7 +174,7 @@ export default function Inquity() {
                 <input
                   id="email"
                   type="email"
-                  className="px-2 py-1 rounded-md mb-3 text-amber-950"
+                  className="px-2 py-1 rounded-md mb-3 text-[#464646]"
                   value={email}
                   onChange={({ target }) => setEmail(target.value)}
                 />
@@ -183,7 +182,7 @@ export default function Inquity() {
                 <label htmlFor="tel" className="text-[1.2rem] font-semibold">
                   연락처
                   {!isNum(num) && <span className="text-[0.8rem] font-[400] ml-2 text-yellow-300">
-                    * 전화번호를 확인해주세요.(숫자만 입력)
+                    * 전화번호를 확인해주세요.
                   </span>}
                   <span className="text-[0.7rem] text-[#ddd]">
                     
@@ -195,7 +194,7 @@ export default function Inquity() {
                   placeholder="-없이 숫자만 입력해 주세요."
                   spellCheck="false"
                   maxLength={11}
-                  className="px-2 py-1 rounded-md mb-3 text-amber-950"
+                  className="px-2 py-1 rounded-md mb-3 text-[#464646]"
                   value={num}
                   onChange={({ target }) => setNum(target.value)}
                 />
@@ -211,7 +210,7 @@ export default function Inquity() {
                 <input
                   id="header"
                   spellCheck="false"
-                  className="text-amber-950 rounded-md px-2 py-1"
+                  className="text-[#464646] rounded-md px-2 py-1"
                   onChange={({ target }) =>
                     target.value.length > 0 ? setHeader(true) : setHeader(false)
                   }
@@ -226,7 +225,7 @@ export default function Inquity() {
                   id="detail"
                   spellCheck="false"
                   placeholder="내용을 입력해 주세요.(최소 10글자)"
-                  className="text-amber-950 rounded-md px-2 py-1 overflow-y-scroll"
+                  className="text-[#464646] rounded-md px-2 py-1 overflow-y-scroll"
                   onChange={({ target }) =>
                     target.value.length > 10
                       ? setDetail(true)
@@ -241,7 +240,7 @@ export default function Inquity() {
 
                   {fileName !== "파일을 업로드해주세요." && (
                     <span
-                      className="hover:text-[#c40f39] hover:cursor-pointer text-center px-1 text-[1.5rem]"
+                      className="hover:text-[#c40f39] hover:cursor-pointer text-center px-1 text-[1.5rem] hover:font-[700]"
                       onClick={ClearAttachment}
                     >
                       ×
@@ -267,12 +266,15 @@ export default function Inquity() {
                 <button
                   type="submit"
                   className="mx-auto px-5 py-1 border-2 rounded-md text-center text-[#fff] font-bold
-              transform duration-[1s] hover:bg-[#C40F37] hover:text-[#fff] disabled:hover:bg-[#000]"
+              transform duration-[1s] hover:bg-[#C40F37] hover:text-[#fff] disabled:hover:bg-[#474747] peer"
                   disabled={disabled}
                   onClick={handleSubmit}
                 >
                   S E N D
                 </button>
+                {disabled ? <p id="tooltip" className="invisible npm mx-auto px-3 py-2 w-[10rem] mt-3 peer-hover:visible relative bg-[#474747] rounded-md text-white text-center">유효하지않습니다. 입력 칸을 확인해 주세요.</p>
+                : 
+                <p className="h-[3rem] py-2 my-3"></p>}
               </form>
             </>
           )}

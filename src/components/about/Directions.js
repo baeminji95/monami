@@ -1,8 +1,10 @@
 import { Map, MapMarker } from "react-kakao-maps-sdk";
+import About from "./About";
 
 export default function Directions() {
     return (
         <>
+        <About/>
             <article className="py-[6rem] flex flex-col items-center tracking-[0.2rem]">
                 <h3 className="text-[2.4rem] font-semibold">MONAMI
                     <span className="text-[#c40f39]"> CONTACT</span>
