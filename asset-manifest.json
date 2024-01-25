@@ -1,9 +1,12 @@
 {
   "files": {
-    "main.css": "/monami/static/css/main.219dd9ec.css",
-    "main.js": "/monami/static/js/main.afa7a761.js",
+    "main.css": "/monami/static/css/main.6e4881a1.css",
+    "main.js": "/monami/static/js/main.014d818f.js",
     "static/js/787.a5f3ec44.chunk.js": "/monami/static/js/787.a5f3ec44.chunk.js",
+    "static/media/NotoSansKR-VariableFont_wght.ttf": "/monami/static/media/NotoSansKR-VariableFont_wght.33752a94ca5252213de8.ttf",
+    "static/media/Montserrat-VariableFont_wght.ttf": "/monami/static/media/Montserrat-VariableFont_wght.7e687123cd4528224ce5.ttf",
     "static/media/visual1.jpg": "/monami/static/media/visual1.6addc7837c7686ca52ec.jpg",
+    "static/media/Montserrat-VariableFont_wght.woff2": "/monami/static/media/Montserrat-VariableFont_wght.53fa430027a8736b21a9.woff2",
     "static/media/page_visual2.jpg": "/monami/static/media/page_visual2.6a5a0f0292ae28c9329d.jpg",
     "static/media/page_visual1.jpg": "/monami/static/media/page_visual1.d18149bf63c5dee97a7e.jpg",
     "static/media/page_visual4.jpg": "/monami/static/media/page_visual4.b375a09e9a70e739b69f.jpg",
@@ -12,12 +15,12 @@
     "static/media/page_visual5.jpg": "/monami/static/media/page_visual5.d6e8a605e1801cd0ffff.jpg",
     "static/media/location_img1.jpg": "/monami/static/media/location_img1.49d68dbeac6d04f8e484.jpg",
     "index.html": "/monami/index.html",
-    "main.219dd9ec.css.map": "/monami/static/css/main.219dd9ec.css.map",
-    "main.afa7a761.js.map": "/monami/static/js/main.afa7a761.js.map",
+    "main.6e4881a1.css.map": "/monami/static/css/main.6e4881a1.css.map",
+    "main.014d818f.js.map": "/monami/static/js/main.014d818f.js.map",
     "787.a5f3ec44.chunk.js.map": "/monami/static/js/787.a5f3ec44.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.219dd9ec.css",
-    "static/js/main.afa7a761.js"
+    "static/css/main.6e4881a1.css",
+    "static/js/main.014d818f.js"
   ]
 }
