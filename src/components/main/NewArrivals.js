@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 
 function PlusBtn() {
     return (
-        <div className="mx-auto relative w-4 h-4 transition-all duration-[1s] hover:rotate-[360deg]
+        <div className="mx-auto relative w-4 h-4 transition-all duration-[1s] group-hover:rotate-[360deg]
         md:w-5 md:h-5
         lg:w-8 lg:h-8
         2xl:w-10 2xl:h-10"
@@ -49,8 +49,8 @@ export default function NewArrivals() {
                                 className="object-cover"
                             />
                         </div>
-                        <Link to="/search" className=" absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] 
-                        bg-[#C40F37]/80 py-[5%] opacity-0 hover:opacity-100 duration-[0.7s] 
+                        <Link to="/search" className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] 
+                        bg-[#C40F37]/80 py-[5%] opacity-0 hover:opacity-100 duration-[0.7s] group
                         flex flex-col justify-center items-center
                         w-[calc(100%-0.8rem)] h-[calc(100%-0.8rem)]
                         2xl:w-[calc(100%-2rem)] 2xl:h-[calc(100%-1.8rem)]"
@@ -82,7 +82,7 @@ export default function NewArrivals() {
                                 className="object-cover" />
                         </div>
                         <Link to="/search"
-                            className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]  bg-[#C40F37]/80 opacity-0 hover:opacity-100 duration-[0.7s] 
+                            className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]  bg-[#C40F37]/80 opacity-0 hover:opacity-100 duration-[0.7s] group
                             flex flex-col justify-center items-center 
                             w-[calc(100%-0.8rem)] h-[calc(100%-0.8rem)]
                             2xl:w-[calc(100%-2rem)] 2xl:h-[calc(100%-2rem)]"
@@ -119,7 +119,7 @@ export default function NewArrivals() {
                         </div>
                         <Link to="/search"
                             className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] 
-                            bg-[#C40F37]/80 opacity-0 hover:opacity-100 duration-[0.7s] 
+                            bg-[#C40F37]/80 opacity-0 hover:opacity-100 duration-[0.7s] group
                             flex flex-col justify-center items-center
                             w-[calc(100%-0.8rem)] h-[calc(100%-0.8rem)]
                             2xl:w-[calc(100%-2rem)] 2xl:h-[calc(100%-2rem)]"
@@ -152,7 +152,7 @@ export default function NewArrivals() {
                             />
                         </div>
                         <Link to="/search" className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] 
-                        bg-[#C40F37]/80 opacity-0 hover:opacity-100 duration-[0.7s] 
+                        bg-[#C40F37]/80 opacity-0 hover:opacity-100 duration-[0.7s] group
                         flex flex-col justify-center items-center
                         w-[calc(100%-0.8rem)] h-[calc(100%-0.8rem)]
                         2xl:w-[calc(100%-2rem)] 2xl:h-[calc(100%-2rem)]"
@@ -185,7 +185,7 @@ export default function NewArrivals() {
                             />
                         </div>
                         <Link to="/search" className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] 
-                        bg-[#C40F37]/80 opacity-0 hover:opacity-100 duration-[0.7s] 
+                        bg-[#C40F37]/80 opacity-0 hover:opacity-100 duration-[0.7s] group
                         flex flex-col justify-center items-center
                         w-[calc(100%-0.8rem)] h-[calc(100%-0.8rem)]
                         2xl:w-[calc(100%-2rem)] 2xl:h-[calc(100%-2rem)] 2xl:py-[4.5rem]"

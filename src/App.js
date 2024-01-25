@@ -24,11 +24,11 @@ export default function App() {
         <TopButton />
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="about/ceo" element={<CeoMessage />}>
+
             <Route path="about/ceo" element={<CeoMessage />} />
             <Route path="about/info" element={<CompanyInfo />} />
             <Route path="about/directions" element={<Directions />} />
-          </Route>
+
 
           <Route path="search" element={<Search />} />
           <Route path="news" element={<NewsPage />} />

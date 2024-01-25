@@ -65,7 +65,7 @@ export default function About() {
             htmlFor="directions"
             className="border basis-0 grow text-center leading-[3rem] peer-checked/directions:bg-[#C40F37] peer-checked/directions:text-[#fff] peer-checked/directions:border-[#C40F37]"
           >
-            <Link to={"/about/directions"}>찾아오시는길</Link>
+            <Link to="/about/directions">찾아오시는길</Link>
           </label>
         </nav>
       </article>

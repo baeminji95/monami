@@ -19,7 +19,11 @@ module.exports = {
       },
       gridTemplateColumns: {
         '3rem_1fr': 'minmax(3rem, 6rem) minmax(0, 1fr)',
-      }
+      },      
+    },
+
+    fontFamily: {
+      Montserrat: ["Montserrat"],
     },
   },
   plugins: [],

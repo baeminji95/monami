@@ -60,11 +60,11 @@ export default function News() {
           <p>{NewsList[newsNo].point[2]}</p>
         </div>
 
-        <pre className="py-10 whitespace-pre-wrap text-[#444]">
+        <pre className="py-20 whitespace-pre-wrap text-[#444] font-Montserrat max-w-[50rem] mx-auto">
           {NewsList[newsNo].detail}
         </pre>
       </div>
-      <div className="flex justify-center items-center gap-3">
+      <div className="flex justify-center items-center gap-3 py-5">
         {newsNo === 0 || (
           <button
             onClick={() => setNewsNo(newsNo - 1)}

@@ -98,7 +98,7 @@ export default function Header() {
         <div>
           <ul className="flex items-center gap-2 text-gray-400 text-[0.7rem]">
             <li>
-              <Link to="#">HOME</Link>
+              <Link to="#" className=" font-Montserrat">HOME</Link>
             </li>
             <li>
               <img

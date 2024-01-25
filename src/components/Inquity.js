@@ -97,7 +97,7 @@ export default function Inquity() {
                 CONTACT US
               </h4>
 
-              <form className="flex flex-col text-white w-[18rem] mx-auto">
+              <form className="flex flex-col text-white w-[20rem] lg:w-[27rem] 2xl:w-[35rem] mx-auto duration-500">
                 <label htmlFor="selsct" className="text-[1.2rem] font-semibold">
                   문의내용
                   {selectInquiry === "문의내용을 선택해 주세요." && <span className="text-[0.8rem] font-[400] ml-2 text-yellow-300">
@@ -107,14 +107,13 @@ export default function Inquity() {
                     id="selsct"
                     onClick={handleDropdwon}
                     onBlur={handleBlur}
-                    className="relative border rounded-md px-2 py-1 w-[18rem] flex justify-between"
+                    className="relative border rounded-md px-2 py-1 w-full flex justify-between"
                   >
                     {selectInquiry}
                     <span className="text-center">
                       {isDropdwonView ? "△" : "▽"}
                     </span>
-                    {isDropdwonView && (
-                      <ul className="absolute top-[90%] left-[50%] translate-x-[-50%] w-[100%] text-[#464646] bg-white border-amber-950 border-2 rounded-md px-2 py-1 mt-[0.3rem]">
+                      <ul className={`w-[100%] absolute top-[90%] left-[50%] h-0 overflow-hidden translate-x-[-50%] text-[#464646] bg-white rounded-md border-amber-950 mt-[0.3rem] duration-300 ${isDropdwonView && 'h-[8.15rem] border-2 px-2 py-1'}`} >
                         <li
                           onClick={select}
                           id="제품문의(대량구매 포함)"
@@ -144,7 +143,7 @@ export default function Inquity() {
                           산업용 제품 문의
                         </li>
                       </ul>
-                    )}
+                    
                   </button>
                 </label>
 
@@ -160,7 +159,7 @@ export default function Inquity() {
                   id="name"
                   type="text"
                   spellCheck="false"
-                  className="px-2 py-1 rounded-md mb-3 text-[#464646]"
+                  className="px-2 py-1 rounded-md mb-3 text-[#464646] outline-[#464646]"
                   value={name}
                   onChange={({ target }) => setName(target.value)}
                 />
@@ -174,7 +173,7 @@ export default function Inquity() {
                 <input
                   id="email"
                   type="email"
-                  className="px-2 py-1 rounded-md mb-3 text-[#464646]"
+                  className="px-2 py-1 rounded-md mb-3 text-[#464646] outline-[#464646]"
                   value={email}
                   onChange={({ target }) => setEmail(target.value)}
                 />
@@ -194,7 +193,7 @@ export default function Inquity() {
                   placeholder="-없이 숫자만 입력해 주세요."
                   spellCheck="false"
                   maxLength={11}
-                  className="px-2 py-1 rounded-md mb-3 text-[#464646]"
+                  className="px-2 py-1 rounded-md mb-3 text-[#464646] outline-[#464646]"
                   value={num}
                   onChange={({ target }) => setNum(target.value)}
                 />
@@ -210,7 +209,7 @@ export default function Inquity() {
                 <input
                   id="header"
                   spellCheck="false"
-                  className="text-[#464646] rounded-md px-2 py-1"
+                  className="text-[#464646] rounded-md px-2 py-1 outline-[#464646]"
                   onChange={({ target }) =>
                     target.value.length > 0 ? setHeader(true) : setHeader(false)
                   }
@@ -225,7 +224,7 @@ export default function Inquity() {
                   id="detail"
                   spellCheck="false"
                   placeholder="내용을 입력해 주세요.(최소 10글자)"
-                  className="text-[#464646] rounded-md px-2 py-1 overflow-y-scroll"
+                  className="text-[#464646] resize-none h-28 rounded-md px-2 py-1 overflow-y-scroll outline-[#464646]"
                   onChange={({ target }) =>
                     target.value.length > 10
                       ? setDetail(true)
@@ -248,7 +247,7 @@ export default function Inquity() {
                   )}
                   <label
                     htmlFor="file"
-                    className="border-2 font-semibold p-1 mx-3 rounded-md shrink-0 hover:text-[#c40f39] hover:border-[#c40f39] transform duration-[0.3s]"
+                    className="border-2 font-semibold p-1 mx-3 rounded-md shrink-0 hover:text-[#c40f39] hover:border-[#c40f39] transform duration-[0.5s]"
                   >
                     첨부파일
                   </label>
@@ -265,14 +264,13 @@ export default function Inquity() {
 
                 <button
                   type="submit"
-                  className="mx-auto px-5 py-1 border-2 rounded-md text-center text-[#fff] font-bold
-              transform duration-[1s] hover:bg-[#C40F37] hover:text-[#fff] disabled:hover:bg-[#474747] peer"
+                  className="mx-auto px-5 py-1 border-2 rounded-md text-center text-[#fff] font-bold duration-[0.5s] hover:bg-[#C40F37] hover:text-[#fff] disabled:hover:bg-[#474747] peer"
                   disabled={disabled}
                   onClick={handleSubmit}
                 >
                   S E N D
                 </button>
-                {disabled ? <p id="tooltip" className="invisible npm mx-auto px-3 py-2 w-[10rem] mt-3 peer-hover:visible relative bg-[#474747] rounded-md text-white text-center">유효하지않습니다. 입력 칸을 확인해 주세요.</p>
+                {disabled ? <p id="tooltip" className="opacity-0 npm mx-auto px-3 py-2 w-[12rem] mt-3 peer-hover:opacity-100 duration-[0.5s] relative bg-[#474747] rounded-md text-white text-center">유효하지않습니다. <br/>입력 칸을 확인해 주세요.</p>
                 : 
                 <p className="h-[3rem] py-2 my-3"></p>}
               </form>

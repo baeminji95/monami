@@ -74,7 +74,7 @@ export default function CompanyInfo() {
                     className="w-[40%] max-h-[80%]"
                     src={process.env.PUBLIC_URL + sub.logo}
                     alt={sub.logoAlt}
-                  />
+                    />
                 </div>
               </div>
             ))}
@@ -110,7 +110,7 @@ export default function CompanyInfo() {
                 href="tel:+66-2-640-0980-2"
                 target="_blank"
                 className="text-[#999] hover:text-[#c40f39]"
-              >
+                >
                 +66-2-640-0980-2
               </a>
 
@@ -119,7 +119,7 @@ export default function CompanyInfo() {
                 href="tel:+66-2-640-0980-2"
                 target="_blank"
                 className="text-[#999] hover:text-[#c40f39]"
-              >
+                >
                 +66-2-640-0980-2
               </a>
 
@@ -128,7 +128,7 @@ export default function CompanyInfo() {
                 href="https://www.facebook.com/monami.thailand/"
                 target="_blank"
                 className="text-[#999] hover:text-[#c40f39]"
-              >
+                >
                 www.facebook.com/monami.thailand/
               </a>
             </div>
@@ -150,7 +150,7 @@ export default function CompanyInfo() {
                 href="tel:+66-38-6508091-4218"
                 target="_blank"
                 className="text-[#999] hover:text-[#c40f39]"
-              >
+                >
                 +66-38-6508091-4218
               </a>
             </div>
@@ -170,7 +170,7 @@ export default function CompanyInfo() {
                 href="http://www.monami.com.cn"
                 target="_blank"
                 className="text-[#999] hover:text-[#c40f39]"
-              >
+                >
                 www.monami.com.cn
               </a>
 
@@ -186,7 +186,7 @@ export default function CompanyInfo() {
                 href="tel:+86-21-69521210-69521216"
                 target="_blank"
                 className="text-[#999] hover:text-[#c40f39]"
-              >
+                >
                 +86-21-69521210-69521216
               </a>
 
@@ -195,7 +195,7 @@ export default function CompanyInfo() {
                 href="tel:+86-21-69521250-59160776"
                 target="_blank"
                 className="text-[#999] hover:text-[#c40f39]"
-              >
+                >
                 +86-21-69521250-59160776
               </a>
 
@@ -204,7 +204,7 @@ export default function CompanyInfo() {
                 href="https://weibo.com/shmonami"
                 target="_blank"
                 className="text-[#999] hover:text-[#c40f39]"
-              >
+                >
                 weibo.com/shmonami
               </a>
             </div>

@@ -64,15 +64,15 @@ export default function Main() {
                         <img src={process.env.PUBLIC_URL + "/images/inquiry_tit_bg.png"} alt="종이와 펜 아이콘" className="pt-8" />
                     <h2 className="font-semibold text-[1.25rem] tracking-wide font-[Montserrat] pt-3">INQUIRY</h2>
                     <div className="w-7 h-1 my-[0.6rem] bg-[#C40F37]"></div>
-                    <p className="text-[0.85rem] text-[#6a6a6a] tracking-wide text-center">
+                    <p className="text-[0.85rem] text-[#6a6a6a] text-center leading-6">
                         언제나 소중한 의견에
-                        <br className="hidden sm:block lg:hidden" />
+                        <br className="hidden sm:block lg:hidden leading-6" />
                         귀 기울이겠습니다. <br />
                         궁금한 사항은 문의하세요.
                     </p>
 
                     <Link to="/inquity" className="w-[10.5rem] h-[2.2rem] border-2 border-[#C40F37] text-center text-[#C40F37] text-[0.88rem] font-[Montserrat] leading-[2rem] mt-10
-                    transform duration-[1s]
+                    transform duration-[0.5s]
                     hover:bg-[#C40F37] hover:text-[#fff]">
                         INQUIRY NOW
                     </Link>

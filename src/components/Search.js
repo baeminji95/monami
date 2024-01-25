@@ -73,9 +73,9 @@ export default function Search() {
             hover:outline hover:outline-[3px] hover:outline-[#C40F37]">
                                     <img src={product.src}
                                         alt={product.alt} className="hover:scale-110 duration-[0.7s]" />
-                                    <div className="bg-white pl-[10%] py-4">
+                                    <div className="bg-white px-[10%] py-4">
                                         <div className="text-[0.65rem] text-[#b3b3b3] font-[Montserrat]">{product.smallCategory}</div>
-                                        <p className="text-[0.8rem] font-semibold font-[Montserrat]">{product.name}</p>
+                                        <p className="text-[0.8rem] h-[2.3rem] self-center font-semibold font-[Montserrat]">{product.name}</p>
                                     </div>
                                 </Link>
                             </div>

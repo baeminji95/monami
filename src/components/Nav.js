@@ -30,7 +30,7 @@ export default function Nav() {
                 2xl:gap-16">
                     {navMenu.map(meue =>
                         <li className="relative inline-block group" key={meue.head}>
-                            <Link to={meue.to} className="block text-[1rem] text-[#666] hover:text-[#C40F37] leading-[6rem]
+                            <Link to={meue.to} className="block text-[1.1rem] text-[#666] hover:text-[#C40F37] leading-[6rem]
                             xl:text-[1.1rem] xl:leading-[6rem]">
                                 {meue.head}
                             </Link>
